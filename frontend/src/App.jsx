@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Catalogue from './pages/Catalogue';
 import Header from './components/Header';
-import Footer from './sections/Footer';
+
 
 function App() {
 

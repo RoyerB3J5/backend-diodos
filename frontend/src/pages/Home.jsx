@@ -1,8 +1,8 @@
-import Header from "../components/Header"
+
 import Init from "../sections/Init"
 import Somos from "../sections/Somos"
 import Form from "../sections/Form"
-import Footer from "../sections/Footer"
+
 import { useEffect } from "react"
 
 function Home() {

@@ -4,7 +4,7 @@ import FormZener from "../components/FormZener"
 import PopupDiodo from "../components/PopupDiodo"
 import FormSchottky from "../components/FormSchottky"
 import FormLed from "../components/FormLed"
-import Footer from "./Footer"
+
 function Form() {
   
   const tiposDiodos = {
