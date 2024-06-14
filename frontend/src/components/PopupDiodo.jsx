@@ -61,7 +61,7 @@ function PopupDiodo( {dataDiodo,tipo,onClose} ) {
               <div className="flex-1 flex flex-col justify-center items-center gap-3">
                 <h3 className=" font-semibold text-lg">Aplicaciones</h3>
                 <ul className=" flex flex-col gap-3 pl-6">
-                  <li>- Converetir CA a CC</li>
+                  <li>- Convertir CA a CC</li>
                   <li>- Rectificador de onda completa</li>
                   <li>- Filtrado de condensadores</li>
                 </ul>
