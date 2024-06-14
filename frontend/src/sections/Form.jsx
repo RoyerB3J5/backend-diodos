@@ -20,7 +20,7 @@ function Form() {
   const [filteredData, setFilteredData] = useState({})
   const [open, setOpen] = useState(false)
   
-  const URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5555/'
+  const URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5555'
   useEffect(() => {
     const fetchData = async () => {
       if (!diodo.tipo) {
@@ -28,7 +28,7 @@ function Form() {
         return};
       setIsLoading(true);
       try {
-        const res = await fetch(`${URL}/1234-unt/${diodo.tipo}`);
+        const res = await fetch(`${URL}/${diodo.tipo}`);
         const newData = await res.json();
         setData(newData);
       } catch (error) {

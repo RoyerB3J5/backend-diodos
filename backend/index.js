@@ -21,7 +21,7 @@ const models = {
   led:Led
 }
 
-app.get('/1234-unt/', async (req,res) =>{
+app.get('/', async (req,res) =>{
   let allData = {}
   try{
     for (const modelName in models){
@@ -37,7 +37,7 @@ app.get('/1234-unt/', async (req,res) =>{
 })
 
 
-app.get('/1234-unt/:tipo', async (req,res) =>{
+app.get('/:tipo', async (req,res) =>{
   const { tipo } = req.params
   const Model = models[tipo]
 
@@ -54,7 +54,7 @@ app.get('/1234-unt/:tipo', async (req,res) =>{
 })
 
 
-app.get('/1234-unt/:tipo/:cod',async (req,res)=>{
+app.get('/:tipo/:cod',async (req,res)=>{
   const {tipo,cod} = req.params
   const Model = models[tipo]
 
@@ -72,7 +72,7 @@ app.get('/1234-unt/:tipo/:cod',async (req,res)=>{
   }
 })
 
-app.post('/1234-unt/:tipo', async (req,res)=>{
+app.post('/:tipo', async (req,res)=>{
   const {tipo} = req.params
   const Model = models[tipo]
 

@@ -10,7 +10,7 @@ function Catalogue() {
 
   const [diodos,setDiodos] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
-  const URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5555/'
+  const URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5555'
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -18,7 +18,7 @@ function Catalogue() {
     const fetchData =  async () =>{
       try{
         setIsLoading(true)
-        const res = await fetch(`${URL}/1234-unt/`)
+        const res = await fetch(`${URL}/`)
         const data = await res.json()
         setDiodos(data)
       } catch (error){
