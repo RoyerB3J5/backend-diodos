@@ -1,0 +1,159 @@
+
+    {
+      "rectificador":{
+        "funcion": "Rectificador",
+        "datos": [
+          {
+            "corriente_max":"1",
+            "info": [
+            {
+              "codigo": "1N4001",
+              "v_inversa":"60",
+              "v_directa":"1,1"
+            },
+            {
+              "codigo": "1N4002",
+              "v_inversa":"120",
+              "v_directa":"1,1"
+            },
+            {
+              "codigo": "1N4003",
+              "v_inversa":"240",
+              "v_directa":"1,1"
+            },
+            {
+              "codigo": "1N4004",
+              "v_inversa":"480",
+              "v_directa":"1,1"
+            },
+            {
+              "codigo": "1N4005",
+              "v_inversa":"720",
+              "v_directa":"1,1"
+            },
+            {
+              "codigo": "1N4006",
+              "v_inversa":"1000",
+              "v_directa":"1,1"
+            },
+            {
+              "codigo": "1N4007",
+              "v_inversa":"1200",
+              "v_directa":"1,1"
+            }
+            ]
+          },
+          {
+            "corriente_max":"3",
+            "info": [
+            {
+              "codigo": "1N5400",
+              "v_inversa":"100",
+              "v_directa":"1"
+            },
+            {
+              "codigo": "1N5401",
+              "v_inversa":"200",
+              "v_directa":"1"
+            },
+            {
+              "codigo": "1N5402",
+              "v_inversa":"300",
+              "v_directa":"1"
+            },
+            {
+              "codigo": "1N5404",
+              "v_inversa":"525",
+              "v_directa":"1"
+            },
+            {
+              "codigo": "1N5406",
+              "v_inversa":"800",
+              "v_directa":"1"
+            },
+            {
+              "codigo": "1N5407",
+              "v_inversa":"1000",
+              "v_directa":"1"
+            },
+            {
+              "codigo": "1N5408",
+              "v_inversa":"1200",
+              "v_directa":"1"
+            }
+            ]
+          }
+        ]
+      },
+      "zener":{
+        "funcion":"Zener",
+        "potencia":"1",
+        "datos":[
+          {
+            "codigo": "1N4728A",
+            "v_zener":"3.3",
+            "c_zener":"76"
+          },
+          {
+            "codigo": "1N4732A",
+            "v_zener":"4.7",
+            "c_zener":"53"
+          },
+          {
+            "codigo": "1N4734A",
+            "v_zener":"5.6",
+            "c_zener":"45"
+          },
+          {
+            "codigo": "1N4738A",
+            "v_zener":"8.2",
+            "c_zener":"31"
+          }
+        ]
+      },
+      "schottky":{
+        "funcion":"Aplicaciones a alta velocidad y baja tension",
+        "datos":[
+          {
+            "corriente_dir":"1",
+            "info": [
+            {
+              "codigo": "1N5817",
+              "v_inversa":"24",
+              "v_directa":"0.45"
+            },
+            {
+              "codigo": "1N5818",
+              "v_inversa":"36",
+              "v_directa":"0.55"
+            },
+            {
+              "codigo": "1N5819",
+              "v_inversa":"48",
+              "v_directa":"0.6"
+            }     
+            ]
+          },
+          {
+            "corriente_dir":"3",
+            "info": [
+            {
+              "codigo": "1N5820",
+              "v_inversa":"24",
+              "v_directa":"0.474"
+            },
+            {
+              "codigo": "1N5821",
+              "v_inversa":"36",
+              "v_directa":"0.5"
+            },
+            {
+              "codigo": "1N5822",
+              "v_inversa":"48",
+              "v_directa":"0.525"
+            }     
+            ]
+          }
+        ]
+      }
+    }
