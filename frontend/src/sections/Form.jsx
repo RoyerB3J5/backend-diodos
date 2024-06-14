@@ -86,7 +86,7 @@ function Form() {
 
   return (
     <>
-      <section className="flex flex-col justify-center items-center py-9 px-1 min-h-[300px] max-h-[1140px] gap-y-6 mb-10 " id="buscar">
+      <section className="flex flex-col justify-center items-center pt-9 pb-6 px-1 min-h-[300px] max-h-[1140px] gap-y-6 mb-10 " id="buscar">
         <h2 className="text-5xl text-blue font-bold text-center">Busca tu <span className="text-back">DIODO</span></h2>
         <div className="h-[2px] w-1/2 mx-auto bg-gradient-to-r from-transparent via-blue to-transparent my-4"></div>
         <div className={`w-auto border-2 border-blue rounded-xl grid gap-6 gap-x-14 p-7 px-6 md:px-8  justify-center items-center ${diodo.tipo == ''? "grid-cols-1": "grid-cols-1 md:grid-cols-2"}`}>

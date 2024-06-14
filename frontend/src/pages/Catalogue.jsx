@@ -37,13 +37,13 @@ function Catalogue() {
     <>  
       <section className=" pt-40 pb-16 px-14 flex flex-col items-center justify-center gap-8">
         <div className=" flex items-center justify-center gap-x-2 sm:gap-x-8 ">
-          <img src={rectificador} alt="Rectificador"  />
-          <h2 className="text-2xl text-center font-semibold">Diodos <span className=" text-blue text-[33px] font-semibold">Rectificadores</span> </h2>
-          <img src={rectificador} alt="Rectificador" className=" text-blue"  />
+          <img src={rectificador} alt="Rectificador" className=" h-8 w-8 sm:h-16 sm:w-16"  />
+          <h2 className="text-xl sm:text-2xl text-center font-semibold flex flex-col sm:flex-row">Diodos <span className=" text-blue text-[33px] font-semibold">Rectificadores</span> </h2>
+          <img src={rectificador} alt="Rectificador" className=" text-blue h-8 w-8 sm:h-16 sm:w-16"  />
           
         </div>
         <div className="h-[2px] w-1/2 mx-auto bg-gradient-to-r from-transparent via-blue to-transparent my-4"></div>
-        <div className="overflow-x-auto w-full flex sm:justify-center items-center">
+        <div className="overflow-x-scroll w-full  max-w-[300px] sm:max-w-[1100px] flex sm:justify-center items-center">
           <table className="w-full max-w-[1100px] table-auto shadow-lg border-collapse  p-5">
             <thead className="bg-back text-blue">
               <tr>
@@ -78,14 +78,14 @@ function Catalogue() {
           <div className=" w-16 h-16 hidden sm:flex"></div>    
         </div>
         <div className="h-[2px] w-1/2 mx-auto bg-gradient-to-r from-transparent via-blue to-transparent my-4 "></div>
-        <div className="overflow-x-auto w-full flex sm:justify-center items-center">
+        <div className="overflow-x-auto w-full max-w-[300px] sm:max-w-[1100px] flex sm:justify-center items-center">
           <table className="w-full max-w-[1100px] table-auto shadow-lg border-collapse p-5">
             <thead className="bg-back text-blue">
               <tr>
                 <th className="px-4 py-5 border">Código</th>
                 <th className="px-4 py-5 border">Voltaje Zener (V)</th>
                 <th className="px-4 py-5 border">Corriente Zener (A)</th>
-                <th className="px-4 py-5 border hidden sm:flex sm:justify-center sm:items-center">Potencia (W)</th>
+                <th className="px-4 py-5 border sm:justify-center sm:items-center">Potencia (W)</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200 bg-gray-50">
@@ -94,7 +94,7 @@ function Catalogue() {
                   <th className="px-4 py-5 border font-normal">{diodo.codigo}</th>
                   <th className="px-4 py-5 border font-normal">{diodo.v_zener}</th>
                   <th className="px-4 py-5 border font-normal">{diodo.c_zener}</th>
-                  <th className="px-4 py-5 border font-normal hidden sm:flex sm:justify-center sm:items-center">{diodo.potencia}</th>
+                  <th className="px-4 py-5 border font-normal  sm:justify-center sm:items-center">{diodo.potencia}</th>
                 </tr>
               ))}
             </tbody>
@@ -110,8 +110,8 @@ function Catalogue() {
           <div className="w-24 h-16 hidden sm:flex"></div>    
         </div>
         <div className="h-[2px] w-1/2 mx-auto bg-gradient-to-r from-transparent via-blue to-transparent my-4"></div>
-        <div className="overflow-x-auto w-full flex sm:justify-center items-center">
-          <table className="min-w-[300px] table-auto shadow-lg border-collapse border border-back p-5">
+        <div className="overflow-x-auto w-full max-w-[300px] sm:max-w-[1100px] flex sm:justify-center items-center">
+          <table className="w-full max-w-[1100px] table-auto shadow-lg border-collapse border border-back p-5">
             <thead className="bg-back text-blue">
               <tr>
                 <th className="px-4 py-5 border">Código</th>
@@ -145,7 +145,7 @@ function Catalogue() {
           <img src={led} alt="diodo zener iconos" className=" aspect-square h-[60px]"/>
         </div>
         <div className="h-[2px] w-1/2 mx-auto bg-gradient-to-r from-transparent via-blue to-transparent my-4"></div>
-        <div className="overflow-x-auto w-full flex sm:justify-center items-center">
+        <div className="overflow-x-auto w-full max-w-[300px] sm:max-w-[110px] flex sm:justify-center items-center">
           <table className="w-full max-w-[1100px] table-auto shadow-lg border-collapse border border-back p-5">
             <thead className="bg-back text-blue">
               <tr>

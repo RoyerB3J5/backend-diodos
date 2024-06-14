@@ -38,9 +38,9 @@ function PopupDiodo( {dataDiodo,tipo,onClose} ) {
 
 
   return (
-    <section className={`absolute h-full w-full ${close? 'hidden':''} z-30 flex justify-center items-center   `}>
-      <div className="absolute inset-0 bg-black opacity-70 z-40 w-full h-full"></div>
-      <div className="absolute z-50 border-4 border-blue rounded-2xl bg-gray-100 mx-3 h-auto w-auto  flex flex-col justify-center items-center p-2 sm:p-4 " style={{ maxHeight: '100vh', overflowY: 'auto' }}>
+    <section className={`fixed bottom-0 h-full w-full ${close? 'hidden':''} z-30 flex justify-center items-center   `}>
+      <div className="fixed inset-0 bg-black opacity-70 z-40 w-full h-full"></div>
+      <div className="relative z-50 border-4 border-blue rounded-2xl bg-gray-100 mx-3 h-auto w-auto  flex flex-col justify-center items-center p-2 sm:p-4 " style={{ maxHeight: '100vh', overflowY: 'auto' }}>
         <IoCloseOutline className="absolute right-3 top-3 text-2xl text-red-600 font-bold hover:cursor-pointer" onClick={handleClick}/>
         <div className="flex w-full
          flex-col justify-center items-center gap-8 p-2">
@@ -60,7 +60,7 @@ function PopupDiodo( {dataDiodo,tipo,onClose} ) {
               <div className="h-[1px] w-full md:h-[180px] md:w-[1px] bg-back "></div>
               <div className="flex-1 flex flex-col justify-center items-center gap-3">
                 <h3 className=" font-semibold text-lg">Aplicaciones</h3>
-                <ul className=" flex flex-col gap-3 pl-6 text-center ">
+                <ul className=" flex flex-col gap-3 pl-6">
                   <li>- Converetir CA a CC</li>
                   <li>- Rectificador de onda completa</li>
                   <li>- Filtrado de condensadores</li>
@@ -86,7 +86,7 @@ function PopupDiodo( {dataDiodo,tipo,onClose} ) {
               <div className="h-[1px] w-full md:h-[180px] md:w-[1px] bg-back "></div>
               <div className="flex-1 flex flex-col justify-center items-center gap-3">
                 <h3 className=" font-semibold text-lg">Aplicaciones</h3>
-                <ul className=" flex flex-col gap-3 pl-6 text-center">
+                <ul className=" flex flex-col gap-3 pl-6">
                   <li>- Mantener voltaje fijo en polarización inversa</li>
                   <li>- Protección contra sobretensiones</li>
                   <li>- Limitar formas de onda</li>
@@ -112,7 +112,7 @@ function PopupDiodo( {dataDiodo,tipo,onClose} ) {
               <div className="h-[1px] w-full md:h-[200px] md:w-[1px] bg-back "></div>
               <div className="flex-1 flex flex-col justify-center items-center gap-3">
                 <h3 className=" font-semibold text-lg">Aplicaciones</h3>
-                <ul className=" flex flex-col gap-3 pl-6 text-center ">
+                <ul className=" flex flex-col gap-3 pl-6 ">
                   <li>- Operar en altas velocidades</li>
                   <li>- Fuentes de potencia</li>
                   <li>- Circuitos de alta frecuencia</li>
@@ -139,7 +139,7 @@ function PopupDiodo( {dataDiodo,tipo,onClose} ) {
               <div className="h-[1px] w-full md:h-[210px] md:w-[1px] bg-back "></div>
               <div className="flex-1 flex flex-col justify-center items-center gap-3">
                 <h3 className=" font-semibold text-lg">Aplicaciones</h3>
-                <ul className=" flex flex-col gap-3 pl-6 text-center">
+                <ul className=" flex flex-col gap-3 pl-6 ">
                   <li>- Iluminación</li>
                   <li>- Publicidad</li>
                   <li>- Señales de tráfico y luces de freno</li>
