@@ -20,7 +20,7 @@ function PopupDiodo( {dataDiodo,tipo,onClose} ) {
     Rojo: Rojo,
     Verde: Verde,
     Azul: Azul,
-    Blanco: Blanco,
+    "Blanco frio": Blanco,
     Ambar: Ambar,
   };
   useEffect (()=>{
