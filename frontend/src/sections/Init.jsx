@@ -2,7 +2,7 @@ import diodo from '../assets/diodo.svg';
 
 function Init() {
   return (
-    <section className="flex flex-wrap flex-col justify-center items-center px-2 sm:px-20 py-5 text-white gap-5 mx-4 max-w-[1500px] lg:w-auto lg:flex-row mt-20">
+    <section className="flex flex-wrap flex-col justify-center items-center px-2 sm:px-20 py-5 text-white gap-5 mx-4  lg:w-auto lg:flex-row mt-20">
       <div className="sm:flex-1 flex flex-wrap flex-col gap-4 py-4 justify-center  lg:items-start">
         <h1 className="text-4xl sm:text-6xl leading-tight">
           Seleccionador de <br className='hidden sm:flex' />
