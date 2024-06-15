@@ -84,7 +84,7 @@ function Catalogue() {
               <tr>
                 <th className="px-4 py-5 border">Código</th>
                 <th className="px-4 py-5 border">Voltaje Zener (V)</th>
-                <th className="px-4 py-5 border">Corriente Zener (A)</th>
+                <th className="px-4 py-5 border">Corriente Zener (mA)</th>
                 <th className="px-4 py-5 border sm:justify-center sm:items-center">Potencia (W)</th>
               </tr>
             </thead>
