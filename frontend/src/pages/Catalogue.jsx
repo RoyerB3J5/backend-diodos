@@ -145,7 +145,7 @@ function Catalogue() {
           <img src={led} alt="diodo zener iconos" className=" aspect-square h-[60px]"/>
         </div>
         <div className="h-[2px] w-1/2 mx-auto bg-gradient-to-r from-transparent via-blue to-transparent my-4"></div>
-        <div className="overflow-x-auto w-full max-w-[300px] sm:max-w-[110px] flex sm:justify-center items-center">
+        <div className="overflow-x-auto w-full max-w-[300px] sm:max-w-[1100px] flex sm:justify-center items-center">
           <table className="w-full max-w-[1100px] table-auto shadow-lg border-collapse border border-back p-5">
             <thead className="bg-back text-blue">
               <tr>

@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react';
 import mecatronica from '../assets/mecatronica.svg'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-import { Link, useMatch,useResolvedPath } from 'react-router-dom';
+import { Link, useLocation, useMatch,useResolvedPath } from 'react-router-dom';
 
 function CustomLink({ to, children,onClick, ...props }) {
   let resolved = useResolvedPath(to);
   let match = useMatch({ path: resolved.pathname, end: true });
-
+  
+  const location = useLocation()
   return (
     <Link
       to={to}
@@ -26,6 +27,17 @@ function Header({location}) {
     setActive(!active)
   }
 
+  
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const offsetTop = section.offsetTop - 100; 
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth',
+      });
+    } 
+  };
 
   useEffect(() =>{
     const handleScroll = () =>{
@@ -47,16 +59,26 @@ function Header({location}) {
       <nav className='flex-1 hidden justify-center md:flex'>
         <ul className='flex justify-around gap-14 text-xl font-semibold '>
           <CustomLink to="/" >INICIO</CustomLink>
-          <li><a href="#quienes_somos" className=' hover:border-b-[3px] hover:border-b-sky transition-all active:border-b-sky active:border-b-[3px] '>QUIÉNES SOMOS</a></li>
-          <li><a href="#buscar" className=' hover:border-b-[3px] hover:border-b-sky transition-all active:border-b-sky active:border-b-[3px] '>BUSCAR</a></li>
+          {location.pathname === '/' && (
+            <>
+              <li><a  className=' hover:border-b-[3px] hover:border-b-sky transition-all active:border-b-sky active:border-b-[3px] ' onClick={()=> scrollToSection('quienes_somos')}>QUIÉNES SOMOS</a></li>
+              <li><a href="#buscar" className=' hover:border-b-[3px] hover:border-b-sky transition-all active:border-b-sky active:border-b-[3px] '>BUSCAR</a></li>
+            </>
+          )}
+          
           <CustomLink to="/catalogo">CATÁLOGO</CustomLink>
         </ul>
       </nav>
       <nav className={`absolute ${active?'flex':'hidden'} right-11 top-20 bg-sky rounded-xl px-6 py-5`}>
         <ul className='flex flex-col justify-center items-center gap-6 text-xl font-semibold text-back '>
           <Link to="" className=' hover:border-b-[3px] hover:border-b-white transition-all 'onClick={changeActive}>INICIO</Link>
-          <li><a href="#quienes_somos" className=' hover:border-b-[3px] hover:border-b-white transition-all ' onClick={changeActive}>QUIÉNES SOMOS</a></li>
-          <li><a href="#buscar" className=' hover:border-b-[3px] hover:border-b-white transition-all ' onClick={changeActive}>BUSCAR</a></li>
+          {location.pathname === '/' && (
+            <>
+              <li><a href="#quienes_somos" className=' hover:border-b-[3px] hover:border-b-white transition-all ' onClick={changeActive}>QUIÉNES SOMOS</a></li>
+              <li><a href="#buscar" className=' hover:border-b-[3px] hover:border-b-white transition-all ' onClick={changeActive}>BUSCAR</a></li>
+            </>
+          )}
+          
           <Link to="catalogo" className=' hover:border-b-[3px] hover:border-b-white transition-all ' onClick={changeActive}>CATÁLOGO</Link>
         </ul>
       </nav>
