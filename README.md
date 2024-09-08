@@ -10,8 +10,8 @@ se pedirán ciertos parámetros que son determinantes para poder escoger el mejo
        . Frontend: React
        . Backend : NodeJS
        . Base de datos: MongoDB
-
-  ![image](https://github.com/user-attachments/assets/136bda91-e7c7-4255-a867-11635d3e5f73)
+Link:
+       https://backend-diodos-1.onrender.com/
 
 
 
