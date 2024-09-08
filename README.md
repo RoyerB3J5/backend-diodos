@@ -1,4 +1,6 @@
 PROYECTO DE BUSCADOR DE DIODOS
+
+
 Esta página web se encarga de realizar una búsqueda de diodos en la base de datos de acuerdo a los parámetros ingresados, que son pedidos en el formulario de la página.
 - Primero se debe de escoger el tipo de diodo del que se queire realizar la búsqueda y a partir de la opción escógida
 se pedirán ciertos parámetros que son determinantes para poder escoger el mejor diodo de acuerdo a las características ingresadas.
